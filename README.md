@@ -81,8 +81,8 @@ class MainActivity: FlutterFragmentActivity() {
 #### Set Default Route Options (Optional)
 ```dart
     MapBoxNavigation.instance.setDefaultOptions(MapBoxOptions(
-                     initialLatitude: 36.1175275,
-                     initialLongitude: -115.1839524,
+                     initialLatitude: 31.222858939110292,
+                     initialLongitude: 75.76795005281622,
                      zoom: 13.0,
                      tilt: 0.0,
                      bearing: 0.0,

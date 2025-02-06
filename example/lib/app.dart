@@ -42,14 +42,14 @@ class _SampleNavigationAppState extends State<SampleNavigationApp> {
 
   final _home = WayPoint(
       name: "Home",
-      latitude: 37.77440680146262,
-      longitude: -122.43539772352648,
+      latitude: 31.223886516124118, 
+      longitude:  75.77498816914576,
       isSilent: false);
 
   final _store = WayPoint(
       name: "Store",
-      latitude: 37.76556957793795,
-      longitude: -122.42409811526268,
+      latitude: 31.124706630089793,
+      longitude:  75.7713208867208,
       isSilent: false);
 
   bool _isMultipleStop = false;
@@ -80,7 +80,7 @@ class _SampleNavigationAppState extends State<SampleNavigationApp> {
     if (!mounted) return;
 
     _navigationOption = MapBoxNavigation.instance.getDefaultOptions();
-    _navigationOption.simulateRoute = true;
+    _navigationOption.simulateRoute = false;
     _navigationOption.language = "en";
     //_navigationOption.initialLatitude = 36.1175275;
     //_navigationOption.initialLongitude = -115.1839524;
@@ -313,7 +313,7 @@ class _SampleNavigationAppState extends State<SampleNavigationApp> {
               ),
             ),
             SizedBox(
-              height: 300,
+              height: 400,
               child: Container(
                 color: Colors.grey,
                 child: MapBoxNavigationView(
